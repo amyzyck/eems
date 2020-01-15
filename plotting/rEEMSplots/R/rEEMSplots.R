@@ -700,7 +700,7 @@ one.prob.contour <- function(mcmcpath, dimns, Props, longlat, plot.params, is.mr
                     key.title = { 
                         mtext(key.greaterthan0, side = 3, cex = 1.5, line = 1.5, font = 1);
                         mtext(key.lessthan0, side = 1, cex = 1.5, line = 1.5, font = 1); },
-                    add.title = TRUE, #plot.params$add.title,
+                    add.title = plot.params$add.title,
                     plot.title = mtext(text = main.title, side = 3, line = 0, cex = 1.5),
                     plot.axes = {
                         filled.contour.outline(mcmcpath, longlat, plot.params);
